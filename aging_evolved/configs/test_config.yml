@@ -1,0 +1,9 @@
+# Simulation Parameters
+episodes: 500
+refresh_rate: 100 # in ms
+simulation_speed: 500 # in ms, the lower the faster
+
+# Population Dynamics
+initial_population_size: 1000
+death_rate_external: 0.35
+reproduction_rate: 0.5
