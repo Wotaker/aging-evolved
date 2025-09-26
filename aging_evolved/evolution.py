@@ -22,18 +22,18 @@ class Evolution:
         self.reproduction_rate = reproduction_rate
 
         # Metrics to track over time
-        self.episode = 0
+        self.episode_count = 0
         self.population_size = self.initial_population_size
         self.history: History = History()
         self._update_history()
 
     def _update_history(self):
         """Records the current state of the simulation."""
-        self.history.episodes.append(self.episode)
+        self.history.episodes.append(self.episode_count)
         self.history.population_size.append(self.population_size)
 
     def step(self):
-        self.episode += 1
+        self.episode_count += 1
 
         # Simple simulation logic for demonstration purposes
         # 1. Mutation
